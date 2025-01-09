@@ -31,8 +31,8 @@ void displayBoard(int board){
 }
 
 int main(){
-  if(w<1)std::cout<<"Error: width must be a positive non-zero integer.\n";
-  if(h<1)std::cout<<"Error: height must be a positive non-zero integer.\n";
+  if(w<1)std::cout<<"Error: width must be a positive integer.\n";
+  if(h<1)std::cout<<"Error: height must be a positive integer.\n";
   if(b==0)std::cout<<"Error: there must be at least 1 bomb.\n";
   if(b>=w*h)std::cout<<"Error: bombs cannot match or exceed area.\n";
   initscr();
